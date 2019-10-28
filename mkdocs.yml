@@ -1,3 +1,13 @@
 site_name: De's Docs
 theme:
   name: 'material'
+
+
+#pages:
+#- Home: 'index.md'
+#- User Guide:
+#    - 'Writing your docs': 'user-guide/writing-your-docs.md'
+#    - 'Styling your docs': 'user-guide/styling-your-docs.md'
+#- About:
+#    - 'License': 'about/license.md'
+#    - 'Release Notes': 'about/release-notes.md'
