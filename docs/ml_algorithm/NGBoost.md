@@ -13,6 +13,8 @@ For full documentation visit [mkdocs.org](https://mkdocs.org).
 \\(a + b\\)
 $$\sum_{k=1}^n\frac{1}{k}$$
 
+![NGBoost图片](https://github.com/delovels/de-wiki/raw/master/resource/picture/NGBoost%20for%20probabilistic%20prediction.png)
+
 ## Project layout
 
     mkdocs.yml    # The configuration file.
