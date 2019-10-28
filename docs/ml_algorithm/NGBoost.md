@@ -1,4 +1,5 @@
 # Welcome to MkDocs
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 For full documentation visit [mkdocs.org](https://mkdocs.org).
 
@@ -7,7 +8,10 @@ For full documentation visit [mkdocs.org](https://mkdocs.org).
 * `mkdocs new [dir-name]` - Create a new project.
 * `mkdocs serve` - Start the live-reloading docs server.
 * `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+>* `mkdocs help` - Print this help message.
+
+\\(a + b\\)
+$$\sum_{k=1}^n\frac{1}{k}$$
 
 ## Project layout
 
