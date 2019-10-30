@@ -30,9 +30,7 @@ natural_grad = inverse(fisher) * standard_grad
 ##给出定义
 NGBoost算法是一种用于概率预测的有监督的学习方法，从预测条件概率分布y|x随x的函数的角度出发，通过这种方法达到提升（的目的）。即
 
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large \theta" style="border:none;">
-$$\theta$$
-$$ P_{\theta }\left (y|x \right ) = f_{\theta }\left ( x\right ) $$
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large P_{\theta }\left (y|x \right ) = f_{\theta }\left ( x\right )" style="border:none;">
 
 
 ##具体算法实现
