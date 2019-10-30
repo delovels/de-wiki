@@ -4,7 +4,7 @@
 ## Natural Gradient
 
 梯度下降通过调整梯度方向上的参数，通过一小段距离，以训练我们的网络。在如何定义“小距离”时出现了一个小问题。在标准梯度下降法中，距离是指参数空间中的欧氏距离。
-![两对高斯分布]()
+![两对高斯分布](https://github.com/delovels/de-wiki/raw/master/resource/picture/%E4%B8%A4%E5%AF%B9%E9%AB%98%E6%96%AF%E5%88%86%E5%B8%83.png)
 
 **Key Point**——梯度测量的是改变参数对输出的影响程度。但是，必须在上下文中看到这对输出的影响:第一个分布中+2的移位比第二个分布中+2的移位意味着更多。自然梯度的作用是重新定义我们更新参数的“小距离”。并非所有参数都相等。与其平等地对待每个参数的变化，我们需要根据每个参数的变化对我们网络的整个输出分布的影响程度来衡量它。
 
@@ -34,24 +34,11 @@ NGBoost算法是一种用于概率预测的有监督的学习方法，从预测�
 $$ P_{\theta }\left (y|x \right ) = f_{\theta }\left ( x\right ) $$
 
 ##具体算法实现
-![算法实现1]()
-![算法实现2]()
+![算法实现1](https://github.com/delovels/de-wiki/raw/master/resource/picture/%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B01.png)
+![算法实现2](https://github.com/delovels/de-wiki/raw/master/resource/picture/%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B02.png)
 
 ##预测流程
-![预测流程]()
+![预测流程](https://github.com/delovels/de-wiki/raw/master/resource/picture/%E9%A2%84%E6%B5%8B%E6%B5%81%E7%A8%8B.png)
 
 ##Q&A
 * Why fit？
-
-
-
-
-
-![NGBoost图片](https://github.com/delovels/de-wiki/raw/master/resource/picture/NGBoost%20for%20probabilistic%20prediction.png)
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
