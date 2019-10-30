@@ -43,6 +43,10 @@ NGBoost算法是一种用于概率预测的有监督的学习方法，从预测�
 <!-- ![forecasting_process](https://github.com/delovels/de-wiki/raw/master/resource/ngboost_picture/forecasting_process.png) -->
 ![forecasting_process][forecasting_process]
 
+自然梯度是将参数更新除以梯度的二阶导数。梯度相对于给定参数方向变化越大，Fisher 信息矩阵中的值越高，那么在该方向上更新的步幅大小越低
+因此，通过捕获关于给定点处的对数似然导数空间的曲率的信息，自然梯度也给出了真实的损失空间中的曲率信息。自然梯度已被证明可以加速收敛（在所需梯度步幅的数量方面）
+主流的优化器RMSProp、Adam的定义中都出现了类似于二阶导数的概念，参考fisher关于方差和二阶导转换的证明
+
 ##Q&A
 * Why fit？
 
