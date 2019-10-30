@@ -1,6 +1,5 @@
 # NGBoost
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
+<!--<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script> -->
 ## Natural Gradient
 
 梯度下降通过调整梯度方向上的参数，通过一小段距离，以训练我们的网络。在如何定义“小距离”时出现了一个小问题。在标准梯度下降法中，距离是指参数空间中的欧氏距离。
@@ -31,7 +30,10 @@ natural_grad = inverse(fisher) * standard_grad
 ##给出定义
 NGBoost算法是一种用于概率预测的有监督的学习方法，从预测条件概率分布y|x随x的函数的角度出发，通过这种方法达到提升（的目的）。即
 
+http://chart.googleapis.com/chart?cht=tx&chl=\Large \theta)
+$$\theta$$
 $$ P_{\theta }\left (y|x \right ) = f_{\theta }\left ( x\right ) $$
+
 
 ##具体算法实现
 ![算法实现1](https://github.com/delovels/de-wiki/raw/master/resource/picture/%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B01.png)
