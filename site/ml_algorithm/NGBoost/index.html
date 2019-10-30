@@ -36,7 +36,7 @@
     
     
       
-        <title>Welcome to MkDocs - De's Docs</title>
+        <title>NGBoost - De's Docs</title>
       
     
     
@@ -75,7 +75,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#welcome-to-mkdocs" tabindex="1" class="md-skip">
+      <a href="#ngboost" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Welcome to MkDocs
+                NGBoost
               
             </span>
           
@@ -212,11 +212,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Welcome to MkDocs
+        NGBoost
       </label>
     
-    <a href="./" title="Welcome to MkDocs" class="md-nav__link md-nav__link--active">
-      Welcome to MkDocs
+    <a href="./" title="NGBoost" class="md-nav__link md-nav__link--active">
+      NGBoost
     </a>
     
       
@@ -230,15 +230,43 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
+  <a href="#natural-gradient" class="md-nav__link">
+    Natural Gradient
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
+  <a href="#how-to-do" class="md-nav__link">
+    How to do
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    给出定义
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    具体算法实现
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    预测流程
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qa" class="md-nav__link">
+    Q&amp;A
   </a>
   
 </li>
@@ -280,15 +308,43 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
+  <a href="#natural-gradient" class="md-nav__link">
+    Natural Gradient
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
+  <a href="#how-to-do" class="md-nav__link">
+    How to do
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    给出定义
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    具体算法实现
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    预测流程
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qa" class="md-nav__link">
+    Q&amp;A
   </a>
   
 </li>
@@ -310,29 +366,47 @@
               
                 
                 
-                <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
+                <h1 id="ngboost">NGBoost</h1>
 <p><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script></p>
-<p>For full documentation visit <a href="https://mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.<blockquote>
-<ul>
-<li><code>mkdocs help</code> - Print this help message.</li>
-</ul>
+<h2 id="natural-gradient">Natural Gradient</h2>
+<p>梯度下降通过调整梯度方向上的参数，通过一小段距离，以训练我们的网络。在如何定义“小距离”时出现了一个小问题。在标准梯度下降法中，距离是指参数空间中的欧氏距离。
+<img alt="两对高斯分布" src="https://github.com/delovels/de-wiki/raw/master/resource/picture/%E4%B8%A4%E5%AF%B9%E9%AB%98%E6%96%AF%E5%88%86%E5%B8%83.png" /></p>
+<p><strong>Key Point</strong>——梯度测量的是改变参数对输出的影响程度。但是，必须在上下文中看到这对输出的影响:第一个分布中+2的移位比第二个分布中+2的移位意味着更多。自然梯度的作用是重新定义我们更新参数的“小距离”。并非所有参数都相等。与其平等地对待每个参数的变化，我们需要根据每个参数的变化对我们网络的整个输出分布的影响程度来衡量它。</p>
+<h2 id="how-to-do">How to do</h2>
+<p><strong>当设定得分函数为MLE时才能这么推出以下结论</strong></p>
+<blockquote>
+<p>首先，我们定义一种新的距离形式，它对应于基于KL散度的距离，KL散度是一种衡量新分布和旧分布差异的度量。
+我们通过定义一个度量矩阵来实现这一点，它允许我们根据一些定制的度量来计算向量的距离。  <br />
+对于一个有5个参数的网络，我们的度量矩阵是5x5。为了用metric计算参数delta变化的距离，我们使用下面的方法</p>
 </blockquote>
-</li>
-</ul>
-<p>\(a + b\)
-$$\sum_{k=1}^n\frac{1}{k}$$</p>
-<p><img alt="NGBoost图片" src="https://github.com/delovels/de-wiki/raw/master/resource/picture/NGBoost%20for%20probabilistic%20prediction.png" /></p>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+<pre><code>totaldistance = 0  
+    for i in xrange(5):  
+        for j in xrange(5):
+            totaldistance += delta[i] * delta[i] * metric[i][j]
 </code></pre>
+
+<blockquote>
+<p>如果我们的度规矩阵是单位矩阵，这个距离和我们用欧几里得距离是一样的。
+然而，大多数时候我们的度规不是单位矩阵。有了度量，我们对距离的测量就可以考虑各种参数之间的关系。
+结果是，我们可以用费雪信息矩阵（费雪信息矩阵是KL散度的二阶导数）作为度规，它可以用KL散度来度量delta距离。
+现在我们有了一个度量矩阵，它根据给定参数变化时的KL散度来度量距离。
+这样，我们就可以计算出标准梯度应该如何缩放。</p>
+</blockquote>
+<pre><code>natural_grad = inverse(fisher) * standard_grad  
+</code></pre>
+
+<h2 id="_1">给出定义</h2>
+<p>NGBoost算法是一种用于概率预测的有监督的学习方法，从预测条件概率分布y|x随x的函数的角度出发，通过这种方法达到提升（的目的）。即</p>
+<p>$$ P_{\theta }\left (y|x \right ) = f_{\theta }\left ( x\right ) $$</p>
+<h2 id="_2">具体算法实现</h2>
+<p><img alt="算法实现1" src="https://github.com/delovels/de-wiki/raw/master/resource/picture/%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B01.png" />
+<img alt="算法实现2" src="https://github.com/delovels/de-wiki/raw/master/resource/picture/%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B02.png" /></p>
+<h2 id="_3">预测流程</h2>
+<p><img alt="预测流程" src="https://github.com/delovels/de-wiki/raw/master/resource/picture/%E9%A2%84%E6%B5%8B%E6%B5%81%E7%A8%8B.png" /></p>
+<h2 id="qa">Q&amp;A</h2>
+<ul>
+<li>Why fit？</li>
+</ul>
                 
                   
                 
