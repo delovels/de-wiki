@@ -371,7 +371,7 @@
 
 <h2 id="natural-gradient">Natural Gradient</h2>
 <p>梯度下降通过调整梯度方向上的参数，通过一小段距离，以训练我们的网络。在如何定义“小距离”时出现了一个小问题。在标准梯度下降法中，距离是指参数空间中的欧氏距离。
-<img alt="两对高斯分布" src="https://github.com/delovels/de-wiki/raw/master/resource/picture/%E4%B8%A4%E5%AF%B9%E9%AB%98%E6%96%AF%E5%88%86%E5%B8%83.png" /></p>
+<img alt="two_gauss_distribution" src="https://github.com/delovels/de-wiki/raw/master/resource/ngboost_picture/two_gauss_distribution.png" /></p>
 <p><strong>Key Point</strong>——梯度测量的是改变参数对输出的影响程度。但是，必须在上下文中看到这对输出的影响:第一个分布中+2的移位比第二个分布中+2的移位意味着更多。自然梯度的作用是重新定义我们更新参数的“小距离”。并非所有参数都相等。与其平等地对待每个参数的变化，我们需要根据每个参数的变化对我们网络的整个输出分布的影响程度来衡量它。</p>
 <h2 id="how-to-do">How to do</h2>
 <p><strong>当设定得分函数为MLE时才能这么推出以下结论</strong></p>
@@ -400,10 +400,10 @@
 <p>NGBoost算法是一种用于概率预测的有监督的学习方法，从预测条件概率分布y|x随x的函数的角度出发，通过这种方法达到提升（的目的）。即</p>
 <p><img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large P_{\theta }\left (y|x \right ) = f_{\theta }\left ( x\right )" style="border:none;"></p>
 <h2 id="_2">具体算法实现</h2>
-<p><img alt="算法实现1" src="https://github.com/delovels/de-wiki/raw/master/resource/picture/%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B01.png" />
-<img alt="算法实现2" src="https://github.com/delovels/de-wiki/raw/master/resource/picture/%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B02.png" /></p>
+<p><img alt="algorithm_implementation1" src="https://github.com/delovels/de-wiki/raw/master/resource/ngboost_picture/algorithm_implementation1.png" />
+<img alt="algorithm_implementation2" src="https://github.com/delovels/de-wiki/raw/master/resource/ngboost_picture/algorithm_implementation2.png" /></p>
 <h2 id="_3">预测流程</h2>
-<p><img alt="预测流程" src="https://github.com/delovels/de-wiki/raw/master/resource/picture/%E9%A2%84%E6%B5%8B%E6%B5%81%E7%A8%8B.png" /></p>
+<p><img alt="forecasting_process" src="https://github.com/delovels/de-wiki/raw/master/resource/ngboost_picture/forecasting_process.png" /></p>
 <h2 id="qa">Q&amp;A</h2>
 <ul>
 <li>Why fit？</li>
