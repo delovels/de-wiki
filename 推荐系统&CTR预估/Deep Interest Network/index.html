@@ -1,0 +1,698 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
+    
+    
+      
+        <title>Deep Interest Network - De's Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#din" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="De's Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              De's Docs
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Deep Interest Network
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="De's Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    De's Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Welcome to MkDocs" class="md-nav__link">
+      Welcome to MkDocs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Ml algorithm
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Ml algorithm
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ml_algorithm/HMM/" title="HMM" class="md-nav__link">
+      HMM
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ml_algorithm/NGBoost/" title="NGBoost" class="md-nav__link">
+      NGBoost
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ml_algorithm/随机采样方法整理与讲解/" title="随机采样方法整理与讲解" class="md-nav__link">
+      随机采样方法整理与讲解
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      推荐系统&CTR预估
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        推荐系统&CTR预估
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Deep Interest Network
+      </label>
+    
+    <a href="./" title="Deep Interest Network" class="md-nav__link md-nav__link--active">
+      Deep Interest Network
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abs" class="md-nav__link">
+    Abs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intro" class="md-nav__link">
+    Intro
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    BackGround
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    主要内容
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    特征表达
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    评价标准
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base-modelembeddingmlp" class="md-nav__link">
+    Base Model(Embedding&amp;MLP)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#embedding-layer" class="md-nav__link">
+    Embedding Layer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pooling-layer-and-concat-layer" class="md-nav__link">
+    Pooling layer and Concat layer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mlp-loss" class="md-nav__link">
+    MLP &amp; loss
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#din_1" class="md-nav__link">
+    DIN结构
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    训练技巧
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mini-batch-aware-regularization" class="md-nav__link">
+    Mini-batch Aware Regularization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-adaptive-activation-function" class="md-nav__link">
+    Data Adaptive Activation Function
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abs" class="md-nav__link">
+    Abs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intro" class="md-nav__link">
+    Intro
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    BackGround
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    主要内容
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    特征表达
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    评价标准
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base-modelembeddingmlp" class="md-nav__link">
+    Base Model(Embedding&amp;MLP)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#embedding-layer" class="md-nav__link">
+    Embedding Layer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pooling-layer-and-concat-layer" class="md-nav__link">
+    Pooling layer and Concat layer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mlp-loss" class="md-nav__link">
+    MLP &amp; loss
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#din_1" class="md-nav__link">
+    DIN结构
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    训练技巧
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mini-batch-aware-regularization" class="md-nav__link">
+    Mini-batch Aware Regularization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-adaptive-activation-function" class="md-nav__link">
+    Data Adaptive Activation Function
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <style>
+img{
+    width: 100%;
+    padding-left: 0%;
+}
+</style>
+
+<h1 id="din">DIN</h1>
+<p><a href="https://arxiv.org/pdf/1706.06978.pdf">原文链接</a></p>
+<h2 id="abs">Abs</h2>
+<p>Embedding&amp;MLP——大规模的稀疏输入特征被映射成为低维embedding向量，然后用分组的方式转换成固定长度的向量，最后将它们串联在一起，馈入多层感知器（MLP），以了解特征之间的非线性关系。这样，无论候选广告是什么，用户特征都被压缩为固定长度的表示向量。固定长度向量的使用将成为瓶颈，这将使Embedding＆MLP方法难以从丰富的历史行为中有效捕获用户的各种兴趣。在本文中，我们提出了一个新颖的模型：深度兴趣网络（DIN），它可以通过设计一个本地激活单元来适应性地学习用户兴趣的表示，从历史行为到某个广告，来解决这一挑战。同时开发了mini-batch aware regularization and data adaptive activation function来解决数据训练问题
+* 使用用户兴趣分布来表示用户多种多样的兴趣爱好
+* 使用Attention机制来实现Local Activation
+* 针对模型训练，提出了Dice激活函数，自适应正则，显著提升了模型性能与收敛速度</p>
+<h2 id="intro">Intro</h2>
+<ul>
+<li>Diversity——用户在访问电商网站时会对多种商品都感兴趣。也就是用户的兴趣非常的广泛。</li>
+<li>Local Activation——用户是否会点击推荐给他的商品，仅仅取决于历史行为数据中的一小部分，而不是全部。</li>
+</ul>
+<p>DIN同时对Diversity和Local Activation进行建模。
+* 针对Diversity：
+针对用户广泛的兴趣，DIN用an interest distribution去表示。</p>
+<ul>
+<li>针对Local Activation：
+DIN借鉴机器翻译中的Attention机制，设计了一种attention-like network structure， 针对当前候选Ad，去局部的激活(Local Activate)相关的历史兴趣信息。和当前候选Ad相关性越高的历史行为，会获得更高的attention score，从而会主导这一次预测。</li>
+</ul>
+<p>当DNN深度比较深(参数非常多)，输入又非常稀疏的时候，很容易过拟合。DIN提出<strong>Adaptive regularizaion</strong>来防止过拟合，效果显著。</p>
+<h2 id="background">BackGround</h2>
+<p>阿里推荐系统工作流程为：
+1.检查用户历史行为数据
+2.使用matching module产生候选ads
+3.通过ranking module得到候选ads的点击概率，并根据概率排序得到推荐列表
+4.记录下用户在当前展示广告下的反应(点击与否)
+5.这是一个闭环的系统，对于用户行为数据(User Behavior Data)，系统自己生产并消费。</p>
+<h2 id="_1">主要内容</h2>
+<h3 id="_2">特征表达</h3>
+<p>论文中作者把特征分为四大类——用户特征、用户行为特征、广告特征、上下文特征，<strong>并没有进行特征组合/交叉特征</strong>。而是通过DNN去学习特征间的交互信息。其中只有<strong>用户行为特征</strong>中会出现<code>multi-hot</code></p>
+<blockquote>
+<p>Embedding -&gt; Pooling + Attention</p>
+</blockquote>
+<h3 id="_3">评价标准</h3>
+<p>AUC表示正样本得分比负样本得分高的概率。在CTR实际应用场景中，CTR预测常被用于对每个用户候选广告的排序。但是不同用户之间存在差异：有些用户天生就是点击率高。以往的评价指标对样本不区分用户地进行AUC的计算。论文采用的GAUC（阿里自己提的）实现了用户级别的AUC计算，在单个用户AUC的基础上，按照点击次数或展示次数进行加权平均，消除了用户偏差对模型的影响</p>
+<h3 id="base-modelembeddingmlp">Base Model(Embedding&amp;MLP)</h3>
+<h4 id="embedding-layer">Embedding Layer</h4>
+<p>对于第i个特征，对应所谓的embedding字典
+* 对于one-hot vector，则对应一个单一的embedding向量
+* 对于multi-hot， 则对应一组embedding向量</p>
+<h4 id="pooling-layer-and-concat-layer">Pooling layer and Concat layer</h4>
+<h4 id="mlp-loss">MLP &amp; loss</h4>
+<p>MLPlayer负责预测，Loss function是Log Loss。整个Model的结构如图所示。</p>
+<p><img alt="base模型" src="../../resource/din_picture/base模型.png" /></p>
+<h3 id="din_1">DIN结构</h3>
+<p>池化层虽然能达到目的，但却会损失很大一部分信息。DIN的关键就是利用attention机制学习locally activated information，从而尽可能减少信息损失。DIN引入了一个激活结构，并使用了如下系统结构：</p>
+<p><img alt="din结构" src="../../resource/din_picture/din结构.png" /></p>
+<p>可以看到，最关键的区别就在激活结构上。DIN借鉴了机器翻译领域中常用的attention机制，但和原始的attention结构并不相同。这个attention结构会导致原本的sum pooling变成一个weighted sum pooling，从而学习到locally activated information。简单地说，通过把ad的embedding和behavior的embedding相乘并输入一个<strong>FNN网络</strong>，我们得到了一个 activation weight，利用这个weight，我们将behaviour的embedding结合起来。</p>
+<h2 id="_4">训练技巧</h2>
+<h3 id="mini-batch-aware-regularization">Mini-batch Aware Regularization</h3>
+<p>我们使用正则化方法来防止过拟合。但是L2正则化意味着在每一个mini-batch的训练中，都需要计算全部参数的更新，这会导致沉重的计算负担，在大规模数据集中尤其不可接受。所以文章提出了Mini-batch Aware Regularization方法，这个方法能利用数据集的稀疏性减少计算量。具体细节可以去看原文。</p>
+<h3 id="data-adaptive-activation-function">Data Adaptive Activation Function</h3>
+<p>PReLu是一种常用的激活函数，它固定在x = 0时出现转折，但当每一层的输入数据的分布不同时，并不是很合适。阿里提出了一种新的激活函数Dice，是PReLu的一种扩展。具体细节可以去看原文。</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../ml_algorithm/随机采样方法整理与讲解/" title="随机采样方法整理与讲解" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                随机采样方法整理与讲解
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.ac79c3b0.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
