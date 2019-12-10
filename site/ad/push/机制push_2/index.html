@@ -655,7 +655,7 @@
                 <style>
 img{
     width: 80%;
-    padding-left: 0%;
+    padding-left: 10%;
 }
 </style>
 
@@ -716,8 +716,8 @@ img{
 <li>加用户活动相关特征（通过终端传感器、google活动识别？），如时间、设备状态、触发检测的传感器类型、传感器值的变化</li>
 <li>引入上下文（时间、设备相关），将周末和工作日模型融合为一个天级模型，引入的方式不是加特征的方式，是cross特征的方式：</li>
 </ul>
-<p><img alt="机制push2公式" src="../../../resource/ad/push/机制push2公式.png" />
-$y= \sum <em>{i}\omega </em>{t,i}\cdot x_{t,i} + \sum <em>{i}\omega </em>{d,i}\cdot x_{d,i} + \sum <em>{i}\omega </em>{e,i}\cdot x_{e,i} + \omega _{0}$</p>
+<p><img alt="机制push2公式" src="../../../resource/ad/push/机制push2公式.png" /></p>
+<p>$y= \sum <em>{i}\omega </em>{t,i}\cdot x_{t,i} + \sum <em>{i}\omega </em>{d,i}\cdot x_{d,i} + \sum <em>{i}\omega </em>{e,i}\cdot x_{e,i} + \omega _{0}$</p>
 <h3 id="6">6 系统部署研究</h3>
 <p>平衡个性化和通知类型（全用户统一）的push，个性化是按照用户喜好分群，并非真正的个性化</p>
                 
