@@ -1,5 +1,5 @@
 #具有自适应通知的大规模研究
-(Yahoo) Attention and Engagement-Awareness in the Wild: A Large-Scale Study with Adaptive Notifications
+(Yahoo/PerCom'17) Attention and Engagement-Awareness in the Wild: A Large-Scale Study with Adaptive Notifications
 
 ###1、intro
 （1）使用实际产品应用程序和相关通知对基于断点的自适应通知进行实际评估，主要表明所谓断点的有效性而不是自己捏造的；
