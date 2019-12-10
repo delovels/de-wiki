@@ -1,3 +1,10 @@
+<style>
+img{
+    width: 100%;
+    padding-left: 0%;
+}
+</style>
+
 #具有自适应通知的大规模研究
 (Yahoo/PerCom'17) Attention and Engagement-Awareness in the Wild: A Large-Scale Study with Adaptive Notifications
 
@@ -14,6 +21,7 @@
 #####研究现状
 感知人类当前的注意力状态有两个主要目标：用户当前的认知负荷（定义为分配给工作记忆的脑力劳动总量）和可中断性（断点被认为
 是中断导致用户减少沮丧感和认知开销的时机——就是相对来说在这个时间点打断是最好的）。三个方面挑战：
+
 * 用户的注意力断点机制没有在真实线上场景来进行评估（以前的文章分析都是画饼？）
 * 中断点的检测和自适用通知的系统还需要研究
 * 用户对通知内容的进一步参与程度需要评估
