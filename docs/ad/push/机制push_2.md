@@ -56,6 +56,7 @@ push系统的挑战
 * 加用户活动相关特征（通过终端传感器、google活动识别？），如时间、设备状态、触发检测的传感器类型、传感器值的变化
 * 引入上下文（时间、设备相关），将周末和工作日模型融合为一个天级模型，引入的方式不是加特征的方式，是cross特征的方式：
 
+![机制push2公式](../../resource/ad/push/机制push2公式.png)
 $y= \sum _{i}\omega _{t,i}\cdot x_{t,i} + \sum _{i}\omega _{d,i}\cdot x_{d,i} + \sum _{i}\omega _{e,i}\cdot x_{e,i} + \omega _{0}$
 
 ###6 系统部署研究
