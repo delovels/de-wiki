@@ -1,7 +1,7 @@
 <style>
 img{
     width: 80%;
-    padding-left: 0%;
+    padding-left: 10%;
 }
 </style>
 
@@ -64,6 +64,7 @@ push系统的挑战
 * 引入上下文（时间、设备相关），将周末和工作日模型融合为一个天级模型，引入的方式不是加特征的方式，是cross特征的方式：
 
 ![机制push2公式](../../resource/ad/push/机制push2公式.png)
+
 $y= \sum _{i}\omega _{t,i}\cdot x_{t,i} + \sum _{i}\omega _{d,i}\cdot x_{d,i} + \sum _{i}\omega _{e,i}\cdot x_{e,i} + \omega _{0}$
 
 ###6 系统部署研究
