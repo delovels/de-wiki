@@ -1,3 +1,10 @@
+<style>
+img{
+    width: 80%;
+    padding-left: 0%;
+}
+</style>
+
 #push自适应系统调度机制
 （19th-KDD）Real-World Product Deployment of Adaptive Push Notification Scheduling on Smartphones
 
