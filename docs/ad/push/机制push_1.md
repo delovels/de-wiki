@@ -23,18 +23,18 @@
 
 ###4、系统设计
 将断点分为两类，物理活动的断点（活动断点主要靠google API），以及设备交互的断点（主要指是否使用设备），如图：
-![push断点类型图.png](../resource/ad/push/push断点类型图.png)
+![push断点类型图.png](../../resource/ad/push/push断点类型图.png)
 
 系统结构图如下：
-![push调度图1.png](../resource/ad/push/push调度图1.png)
+![push调度图1.png](../../resource/ad/push/push调度图1.png)
 server端push消息到client端，此时触发断点检测，预测模型是放在终端上的（LR）
 
 检测流程图如下：
-![push断点检测流程图.png](../resource/ad/push/push断点检测流程图.png)
+![push断点检测流程图.png](../../resource/ad/push/push断点检测流程图.png)
 
 传感器数据表：
-![收集传感器数据.png](../resource/ad/push/收集传感器数据.png)
+![收集传感器数据.png](../../resource/ad/push/收集传感器数据.png)
 
 特征抽取：
-![传感器数据特征抽取.png](../resource/ad/push/传感器数据特征抽取.png)
+![传感器数据特征抽取.png](../../resource/ad/push/传感器数据特征抽取.png)
 
